@@ -1,0 +1,27 @@
+{
+  "name": "e-portfolio",
+  "version": "1.0.0",
+  "description": "Jeiner Gabriel Grafil Portfolio Website",
+  "scripts": {
+    "postinstall": "cp node_modules/@vercel/speed-insights/dist/index.mjs js/speed-insights.js",
+    "dev": "npx serve .",
+    "build": "echo 'Static site - no build needed'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jner2/e-portfolio.git"
+  },
+  "keywords": [
+    "portfolio",
+    "static-site"
+  ],
+  "author": "Jeiner Gabriel Grafil",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jner2/e-portfolio/issues"
+  },
+  "homepage": "https://github.com/Jner2/e-portfolio#readme",
+  "dependencies": {
+    "@vercel/speed-insights": "^2.0.0"
+  }
+}

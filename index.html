@@ -703,20 +703,30 @@
     .cert-card:hover::before { opacity: 1; }
 
     .cert-logo {
-      font-size: 2.2rem;
-      margin-bottom: 1rem;
+      width: 90px;
+      height: 90px;
+      object-fit: contain;
+      margin: 0 auto 1.2rem;
+      display: block;
+      filter: drop-shadow(0 0 12px rgba(168,85,247,0.2));
+      transition: filter 0.3s, transform 0.3s;
+    }
+
+    .cert-card:hover .cert-logo {
+      filter: drop-shadow(0 0 20px rgba(168,85,247,0.45));
+      transform: scale(1.05);
     }
 
     .cert-name {
-      font-size: 0.92rem;
+      font-size: 0.88rem;
       font-weight: 700;
       margin-bottom: 0.35rem;
-      line-height: 1.3;
+      line-height: 1.4;
     }
 
     .cert-issuer {
       font-family: var(--mono);
-      font-size: 0.65rem;
+      font-size: 0.63rem;
       color: var(--purple3);
       letter-spacing: 0.1em;
       margin-bottom: 0.5rem;
@@ -1098,14 +1108,7 @@
   ============================================================ -->
   <div id="about">
     <div class="about-photo-wrap reveal">
-      <!-- EDIT: Replace the placeholder div below with:
-           <img src="profile.jpg" alt="Jeiner Gabriel Grafil" class="about-photo" />
-           after uploading your photo to the repo -->
-      <div class="about-photo-placeholder">
-        <span style="font-size:3rem">👤</span>
-        <span>profile.jpg</span>
-        <span style="font-size:0.6rem;color:var(--text3);text-align:center;max-width:160px">Replace with your photo filename in the HTML</span>
-      </div>
+      <img src="profile.jpg" alt="Jeiner Gabriel Grafil" class="about-photo" />
       <div class="about-photo-frame"></div>
     </div>
     <div class="about-text reveal">
@@ -1304,26 +1307,26 @@
     <h2 class="section-title reveal">Credentials &amp; <span>Badges</span></h2>
     <div class="certs-grid">
 
-      <div class="cert-card reveal">
-        <div class="cert-logo">🛡️</div>
+      <a href="https://www.credly.com/users/jeiner-gabriel-grafil" target="_blank" class="cert-card reveal" style="display:block; text-decoration:none;">
+        <img src="https://images.credly.com/size/340x340/images/7b3f119b-ada8-4ff6-817a-f2a8bbb7fe97/blob" alt="CompTIA ITF+ Badge" class="cert-logo" />
         <div class="cert-name">CompTIA IT Fundamentals+ (ITF+)</div>
         <div class="cert-issuer">CompTIA</div>
         <div class="cert-date">Issued May 25, 2024</div>
-      </div>
+      </a>
 
-      <div class="cert-card reveal">
-        <div class="cert-logo">☁️</div>
+      <a href="https://www.credly.com/users/jeiner-gabriel-grafil" target="_blank" class="cert-card reveal" style="display:block; text-decoration:none;">
+        <img src="https://images.credly.com/size/340x340/images/e3541a0c-dd4a-4820-8052-5001006efc85/blob" alt="AWS Cloud Foundations Badge" class="cert-logo" />
         <div class="cert-name">AWS Academy Graduate — Cloud Foundations</div>
         <div class="cert-issuer">Amazon Web Services</div>
         <div class="cert-date">Issued Oct 30, 2025</div>
-      </div>
+      </a>
 
-      <div class="cert-card reveal">
-        <div class="cert-logo">🌐</div>
+      <a href="https://www.credly.com/users/jeiner-gabriel-grafil" target="_blank" class="cert-card reveal" style="display:block; text-decoration:none;">
+        <img src="https://images.credly.com/size/340x340/images/a49be93a-34ff-4224-996c-b2c976a5dc9d/blob" alt="AWS Cloud Web Application Builder Badge" class="cert-logo" />
         <div class="cert-name">AWS Academy Graduate — Cloud Web Application Builder</div>
         <div class="cert-issuer">Amazon Web Services</div>
         <div class="cert-date">Issued Nov 24, 2025</div>
-      </div>
+      </a>
 
     </div>
 
